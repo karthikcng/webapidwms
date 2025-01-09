@@ -1,0 +1,6 @@
+@webapidwms_HostAddress = http://localhost:5074
+
+GET {{webapidwms_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -13,7 +13,7 @@ namespace webapidwms.bussinesslogic
 {
     public class MAIN_BL
     {
-        public int Get_DwmsMenu(ref get_menu_IP ip, ref get_menu_OP op, string connectionString)
+        public int Get_Dwms_Menu(ref get_menu_IP ip, ref get_menu_OP op, string connectionString)
         {
             string query = @"
             SELECT DISTINCT  tenant_code, system_code,system_id,tenant_id, l1_menu_item_name1, l2_menu_item_name1 , l1_menu_item_display_order, l2_menu_item_display_order 

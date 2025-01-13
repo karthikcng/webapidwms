@@ -18,8 +18,8 @@ namespace webapidwms.Controllers
         }
 
         [HttpPost]
-        [Route("Get_DwmsMenu")]
-        public JsonResult Get_DwmsMenu(get_menu_IP ip)
+        [Route("Get_Dwms_Menu")]
+        public JsonResult Get_Dwms_Menu(get_menu_IP ip)
         {
             String connectionString = Configuration["DBConnection"];
 
@@ -27,7 +27,7 @@ namespace webapidwms.Controllers
 
             MAIN_BL bl = new MAIN_BL();
 
-            bl.Get_DwmsMenu(ref ip, ref op, connectionString);
+            bl.Get_Dwms_Menu(ref ip, ref op, connectionString);
             return new JsonResult(op);
         }
     }
